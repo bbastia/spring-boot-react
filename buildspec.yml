@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Build started on `date`
+      - mvn test
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - mvn clean install -Pdemo
+artifacts:
+  files:
+    - spring-boot-react/target/demo-0.0.1-SNAPSHOT.jar
