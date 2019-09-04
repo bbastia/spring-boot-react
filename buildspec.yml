@@ -14,6 +14,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn clean install -Pdemo
+
 artifacts:
   files:
-    - spring-boot-react/target/demo-0.0.1-SNAPSHOT.jar
+    - target/demo-0.0.1-SNAPSHOT.jar
